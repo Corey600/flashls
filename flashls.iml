@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="Flex" version="4">
-  <component name="FlexBuildConfigurationManager" active="flashls">
+  <component name="FlexBuildConfigurationManager" active="Player">
     <configurations>
-      <configuration name="flashls" output-file="flashls.swf" output-folder="$MODULE_DIR$/out/production/flashls">
+      <configuration name="Player" main-class="org.mangui.basic.Player" output-file="Player.swf" output-folder="$MODULE_DIR$/out/Player">
         <dependencies target-player="18.0">
+          <entries>
+            <entry library-id="16562ddb-e91e-4d5a-a857-1d84cbdd8eae">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="143b732d-9533-4866-a4ae-000080cbf74a">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="55024624-e855-45c7-a83f-647a063c7e07">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
           <sdk name="flex_sdk_4.6.0.23201B" />
         </dependencies>
-        <compiler-options />
+        <compiler-options>
+          <option name="additionalOptions" value="-define CONFIG::LOGGING false -define CONFIG::FLASH_11_1 true" />
+        </compiler-options>
         <packaging-air-desktop />
         <packaging-android />
         <packaging-ios />
@@ -21,5 +34,38 @@
     </content>
     <orderEntry type="jdk" jdkName="flex_sdk_4.6.0.23201B" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="16562ddb-e91e-4d5a-a857-1d84cbdd8eae" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="143b732d-9533-4866-a4ae-000080cbf74a" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib/flowplayer" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib/flowplayer" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="55024624-e855-45c7-a83f-647a063c7e07" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib/osmf" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib/osmf" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>

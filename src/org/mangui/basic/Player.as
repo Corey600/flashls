@@ -15,14 +15,15 @@ package org.mangui.basic {
         public function Player() {
             hls = new HLS();
             hls.stage = this.stage;
-            video = new Video(640, 480);
+            video = new Video(595, 335);
             addChild(video);
             video.x = 0;
             video.y = 0;
             video.smoothing = true;
             video.attachNetStream(hls.stream);
             hls.addEventListener(HLSEvent.MANIFEST_LOADED, manifestHandler);
-            hls.load("http://domain.com/hls/m1.m3u8");
+            hls.load("http://hzhls01.ys7.com:7887/hcnp/518363144_1_1_1_0_183.136.184.7_6500.m3u8?dfc4bcc0-e743-4ee5-bfa0-9f42dc352eed");
+
         }
 
         public function manifestHandler(event : HLSEvent) : void {
